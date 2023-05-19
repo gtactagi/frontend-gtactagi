@@ -1,7 +1,15 @@
+@font-face
+{font-family: "chiler";
+src: url(../fuentes-letras/letrachiler.ttf)
+format("truetype");
+}
+
+
+
 body {background-color: grey;
 }
-.centrar{
-font-size:xx-large ;
+.centrar{font-size: 2.2rem;
+  font-family:'Josefin Sans', sans-serif; 
 color: blue;
 text-decoration: underline;}
 header {background-color: black;
@@ -14,17 +22,26 @@ img.logo {width:40px;
 height:40px;}
 img.redimension{width:70px;
 height:70px;}
-h2{background-color: orange;
+h2{font-family: "chiler";
+  background-color: orange;
 margin: 10px;
 font-size:xx-large;
 text-align: center;
 color: purple;}
+img.saganaki{width: 18vw;
+}
+h3{font-family: "chiler";
+font-size: 1.5rem;}
 section{background-color: white;
   margin: 15px;
   color: red;
   display: flex;
   justify-content:space-around}
-h4{text-decoration: underline;}
+h4{font-family: "chiler";
+font-size: 1.5em;
+  text-decoration: underline;}
+ol{font-family:"chiler";
+font-size: 1.5rem}
 div.video {
   background-color: orange}
 footer {background-color: black;
@@ -32,6 +49,13 @@ display: flex;
 justify-content:space-between;}
 iframe.1{width:30px;
 height:30px;}
-img.logo2{width:60px;
-height:60px;}
-.nombre{color: white;}
+
+img.logo2{position: fixed;
+  width:40px;
+height:40px;}
+/* agrego el fixed pero cuando amplio el tamaño de la pagina desaparce la imagen del logo2. No comprendo que pasa,AYUDAAAAA*/
+.nombre{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  }
+a:hover{background-color: gold}
