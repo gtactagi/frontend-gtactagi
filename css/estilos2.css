@@ -9,7 +9,7 @@ format("truetype");
 body {background-color: grey;
 }
 .centrar{font-size: 2.2rem;
-  font-family:'Josefin Sans', sans-serif; 
+  font-family:'Josefin Sans', sans-serif;
 color: blue;
 text-decoration: underline;}
 header {background-color: black;
@@ -22,40 +22,68 @@ img.logo {width:40px;
 height:40px;}
 img.redimension{width:70px;
 height:70px;}
-h2{font-family: "chiler";
+h2{display: flex;
+  text-decoration: underline;
+  font-family: "chiler";
   background-color: orange;
 margin: 10px;
 font-size:xx-large;
 text-align: center;
 color: purple;}
 img.saganaki{width: 18vw;
-}
-h3{font-family: "chiler";
-font-size: 1.5rem;}
-section{background-color: white;
-  margin: 15px;
-  color: red;
   display: flex;
-  justify-content:space-around}
-h4{font-family: "chiler";
+  justify-content: space-around;
+}
+h3{
+  font-family: "chiler";
+font-size: 1.5rem;}
+section{
+  background-color: white;
+  margin: 15px;
+  display: flex;
+  justify-content:space-around;
+text-decoration: underline;
+text-decoration-color: green;}
+h4{
+  font-family: "chiler";
 font-size: 1.5em;
-  text-decoration: underline;}
-ol{font-family:"chiler";
+  }
+ol{
+  font-family:"chiler";
 font-size: 1.5rem}
 div.video {
   background-color: orange}
 footer {background-color: black;
 display: flex;
-justify-content:space-between;}
+justify-content:space-between;
+display: flex;align-items: center;}
 iframe.1{width:30px;
 height:30px;}
 
-img.logo2{position: fixed;
-  width:40px;
-height:40px;}
-/* agrego el fixed pero cuando amplio el tamaño de la pagina desaparce la imagen del logo2. No comprendo que pasa,AYUDAAAAA*/
-.nombre{
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
-  }
+div.div-con-borde {
+  border: 2px solid pink;
+  padding: 10px;
+  color: white
+}
+
+.div-con-borde p {
+  margin: 0;
+}
+
+.div-con-borde h5 {
+  margin-bottom: 5px;
+}
 a:hover{background-color: gold}
+/*aca seria para que a partir de 993 se apague oculte la etiqueta*/
+@media (min-width: 993px) {
+  .div-con-borde {
+    display: none;
+  }
+}
+
+/*aca seria para que a partir de 768 se apague el video*/
+@media (min-width: 769px) {
+  .video {
+    display: block;
+  }
+}
