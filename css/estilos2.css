@@ -38,7 +38,7 @@ h3{
   font-family: "chiler";
 font-size: 1.5rem;}
 section{
-  background-color: white;
+  background-color: purple;
   margin: 15px;
   display: flex;
   justify-content:space-around;
@@ -73,6 +73,11 @@ div.div-con-borde {
 .div-con-borde h5 {
   margin-bottom: 5px;
 }
+div,descarga{background-color: gold;}
+img.card-img-top{width: 100%;}
+div.container{background-color: silver;
+}
+
 a:hover{background-color: gold}
 /*aca seria para que a partir de 993 se apague oculte la etiqueta*/
 @media (min-width: 993px) {
