@@ -12,12 +12,20 @@ body {background-color: green;
   font-family:'Josefin Sans', sans-serif;
 color: blue;
 text-decoration: underline;}
+header:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+  background-color: violet;
+  transition: background-color 0.5s ease-in-out;
+}
 header {background-color: black;
   display: flex;
   justify-content:space-between;
 }
-div.uno {display: flex;
-justify-content:space-around}
+div.uno:hover {display: flex;
+justify-content:space-around;
+}
+
 img.logo {width:40px;
 height:40px;}
 img.redimension{width:70px;
@@ -30,10 +38,11 @@ margin: 10px;
 font-size:xx-large;
 text-align: center;
 color: purple;}
-img.saganaki{width: 18vw;
-  display: flex;
-  justify-content: space-around;
+img.saganaki:hover {
+  transform: scale(2);
+  transition: transform 1s ease-in-out;
 }
+
 h3{
   font-family: "chiler";
 font-size: 1.5rem;}
